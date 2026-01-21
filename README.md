@@ -32,6 +32,17 @@ pip install pip==23.3.1
 pip install gym==0.18.3
 ```
 
+- 利用conda环境安装过的所有依赖，按时间顺序补充，另外目前使用50系显卡使用pyroch报错：sm_120架构问题还未解决，期待大佬支招
+```bash
+conda create -n rllearning python=3.8
+conda activate rllearning
+pip install numpy
+pip install matplotlib
+pip install tqdm
+pip install pygame #用于使用gymnasium
+
+```
+
 ## Learning Resources | 学习资源
 
 - **Main Reference 1**: [Mathematical Foundation of Reinforcement Learning](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning), where I study reinforcement learning from the perspective of mathematical principles, and one of the difficulties lies in understanding the mathematical formulas.  
@@ -39,6 +50,9 @@ pip install gym==0.18.3
 
 - **Main Reference 2**: [Hands-on Reinforcement Learning](https://hrl.boyuai.com/), where I am learning reinforcement learning through Python code, and the difficulty lies in the dual assault of Python syntax and principles.  
   **主要参考 2**：[动手学强化学习](https://hrl.boyuai.com/)，通过Python代码学习强化学习,其中的难点在于Python语法和原理的双重围攻念。
+
+- **Main Reference 3**: [Gymnasium Documentation](https://gymnasium.farama.org/), An API standard for reinforcement learning with a diverse collection of reference environments .  
+  **主要参考 3**：[Gymnasium文档](https://gymnasium.farama.org/)，一种适用于多种参考环境的强化学习的API标准。
 
 ## Completed Tasks | 已完成项
 
