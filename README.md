@@ -5,6 +5,33 @@ Welcome to my personal repository, where I document my **Reinforcement Learning 
 
 Ubuntu 22.04 | VS Code | Python
 
+## Installation | 安装
+To set up the environment and install `gym==0.18.3`, follow these steps:  
+设置环境并安装 `gym==0.18.3`，请按照以下步骤进行：  
+
+1. `conda create -n rllearning python=3.8`  
+2. `conda activate rllearning`  
+3. `pip install --upgrade pip setuptools==57.5.0`  
+4. `pip install --upgrade pip wheel==0.37.0`  
+5. `pip install gym==0.18.3`
+
+If you encounter the following error:  
+如果遇到报错：  
+```bash
+[notice] A new release of pip is available: 25.0.1 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+ERROR: No matching distribution found for gym==0.18.3
+```
+
+You can try the following solutions:  
+您可以尝试以下解决方案：
+
+```bash
+pip cache purge
+pip install pip==23.3.1
+pip install gym==0.18.3
+```
+
 ## Learning Resources | 学习资源
 
 - **Main Reference 1**: [Mathematical Foundation of Reinforcement Learning](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning), where I study reinforcement learning from the perspective of mathematical principles, and one of the difficulties lies in understanding the mathematical formulas.  
